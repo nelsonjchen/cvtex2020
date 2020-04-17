@@ -68,7 +68,7 @@
 
 \begin{document}
 \name{Nelson Chen}
-\tagline{Senior Software Engineer and Software Architect}
+\tagline{Senior Software Engineer}
 %% You can add multiple photos on the left or right
 % \photoR{2.8cm}{Globe_High}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
@@ -101,21 +101,27 @@
 \cvsection{Experience}
 
 
-\cvevent{Senior Software Engineer}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
+\cvevent{Senior Software Architect}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
 \begin{itemize}
-\item Produced Appveyor CI/CD systems to compile and package Windows Python software for distribution.
-\item Investigated and growing the adoption of GitHub Actions for CI/CD not just for the receipt interception software but for the rest of the company platforms.
-\item Ported Python 2.6 software to Python 2.7
-\item Ported Python 2.7 software to Python 3.7
-\item On-boarded new interns, engineers, senior engineers, and managers to the company platform.
+\item Configured Appveyor CI/CD system to compile and package Windows Python software for distribution.
+\item Configured GitHub Actions for CI/CD for the receipt interception software but for the rest of the company platforms.
+\item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7 POS machines in QEMU-based virtual machines on Google Cloud Platform. 
+\item Prototyped pytest fixture wrapping QEMU.
+\item Assisted with port of Rails 2 application to Rails 4 by creating unit and integration tests, setting up test Docker images, and configuring GitHub Actions to run test suite.
+\item Ported Windows/Linux Python 2.6 printer interception software to Python 2.7.
+\item Ported Windows/Linux Python 2.7 printer interception software to Python 3.7.
 \item Supported, extended, and maintained printer stream interception software in 30,000 locations.
-\item Ported legacy developer-style installation of deployed point of sale software to a packaged and single folder and installation footprint.
-\item Continued maintenance organization's main product offering's receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Helped create a MSI installer for receipt interception software
-\item Debugged, produced, and publicly documented novel method to directly load OpenSSL x.509 "PEM" certificates in the C# "HttpClient" without pre-conversion of certificate formats.
-\item Continued support of Django and Rails backend for receipt interception software.
-\item Modified existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
-\item Low-level reverse engineering and investigation of various point of sale software and components for integration
+\item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target.
+\item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
+\item Assisted in creation and maintaining of Windows MSI installer for receipt interception software.
+\item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
+\item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 to Windows 10 1809+.
+\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into unit test harnesses to produce or maintain parsers.
+\item Continued support of Django backend and Rails frontend for receipt interception software.
+\item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems.
+\item Modified pre-existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
+\item Ongoing advisement to configuring JIRA to organization workflow.
+\item Continued low-level reverse engineering and investigation of various point of sale software and components for integration.
 \end{itemize}
 
 \divider
@@ -124,54 +130,129 @@
 
 \begin{itemize}
 \item Proposed, completed, and performed transition and import of three company-wide issue tracking systems and two Wikis to Atlassian JIRA and Confluence.
-\item Continued maintenance organization's main product offering's receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Helped produce a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
+\item Continued maintenance of receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
+\item Assisted in production a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
 \item Conceived and implemented low-level Windows function hooking technology for printer interception software.
-\item Helped create and produce Google App Engine backends
-\item Continued support of Django and Rails backend for receipt interception software.
-\item Supported, extended, and maintained printer stream interception software in 30,000 locations.
-\item On-boarded new interns, engineers, senior engineers, and managers to the company platform.
-\item Developed VueJS/Rust Printer simulator for EPSON thermal receipt printers for developer use.
+\item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
+\item Continued support of Django backend and Rails frontend for receipt interception software.
+\item Supported, extended, and maintained printer stream interception software to 30,000 locations.
+\item Developed VueJS/Rust Printer simulator for EPSON thermal receipt printers for internal developer use.
 \item Proposed, completed, and performed adoption of CI/CD for receipt interception software using CircleCI.
-\item Proposed, completed, and performed transition and import of existing Atlassian HipChat chat to Slack
-\item Low-level reverse engineering and investigation of various point of sale software and components for integration
+\item Proposed, completed, and performed transition and import of existing Atlassian HipChat internal message system to Slack.
+\item Continued low-level and high-level reverse engineering and investigation of various point of sale software and components for integration.
 \end{itemize}
 
 \divider
 
 \cvevent{Software Engineer}{SmartReceipt}{December 2012 -- March 2014}{Santa Barbara, CA}
 \begin{itemize}
-\item Advised upon real-world development and systems administration practices.
 \item Contributed to whole infrastructure refactoring with Chef and Salt Stack.
-\item Contributed and maintained organization's main product offering's receipt data parser and internals.
+\item Contributed and maintained printer interception receipt data parser and internals of receipt interception software.
 \item Developed new rapid Kitchen, Vagrant, and automated testing workflow for Chef infrastructure development and application
-\item Ported and applied similar ``clean room sandbox'' workflow to organization's legacy Rails application.
+\item Produced a Vagrant workflow to organization's Rails 2 application.
 \item Produced customer map with static site generators, Google Map APIs and custom styled maps. 
-\item Migrated main customer-site-deployed software to version control best practices.
+\item Migrated version control practices to Git best practices.
 \item Supported, extended, and maintained printer stream interception software in 3,000 locations.
-\item Observed business, administration, financial, and management practices.
-\item Reverse engineering and investigation of various point of sale software and components for integration
+\item Began reverse engineering and investigation of various point of sale software systems and components for integration.
 \end{itemize}
 
-\cvevent{Web Architect and Technical Advistor}{Because of Hope 501(c)(3)}{December 2012 -- Ongoing}{Santa Barbara, CA}
+\cvevent{Web Architect and Technical Advisor (Volunteer)}{Because of Hope 501(c)(3)}{December 2012 -- Ongoing}{Santa Barbara, CA}
 \begin{itemize}
-\item Produced VueJS widgets to interactively list students in scholarship program for use on Shopify-based iteration of site
+\item Produced VueJS widgets to interactively list students in scholarship program for inclusion on Shopify-based iteration of site
 \item Produced complete nanoc static site
-\item Setup Heroku-based review system and CI/CD to deploy sites and widgets
+\item Setup Heroku-based review system and CI/CD to deploy sites and widgets.
+\item Continued maintenance of widgets used on Shopify site,
+\item Continued advisement of IT issues regarding emails and newsletter reachability.
 \end{itemize}
 
-% \cvsection{A Day of My Life}
+\cvsection{Selected Personal Projects and Contributions}
 
-% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% % \wheelchart{outer radius}{inner radius}{
-% % comma-separated list of value/text width/color/detail}
-% \wheelchart{1.5cm}{0.5cm}{%
-%   6/8em/accent!30/{Sleep,\\beautiful sleep},
-%   3/8em/accent!40/Hopeful novelist by night,
-%   8/8em/accent!60/Daytime job,
-%   2/10em/accent/Sports and relaxation,
-%   5/6em/accent!20/Spending time with family
-% }
+\cvevent{Owner of github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
+
+\begin{itemize}
+\item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli}/\texttt{speedtest-rs} tests internet speed against speedtest.net or ookla.net infrastructure.
+\item From 2015 to late 2019 when Ookla released their official native CLI application, this was the only native benchmark application that tested against speedtest.net infrastructure. The native CLI application is closed source.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/commaai/\texttt{opendbc}}{Vector DBC}{March 2020 -- Ongoing}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{opendbc} is an open database of definition files for CAN-bus signals in non-truck vehicles. The database extensively for "openpilot" self driving vehicle project.
+\item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{reverse-rdp-windows-github-actions}}{GitHub Actions}{December 2019}{San Diego, CA}
+
+\begin{itemize}
+\item \texttt{reverse-rdp-windows-github-actions} is a GitHub Actions demo/instruction to reverse RDP into a Windows GitHub Actions build box. This is extremely useful for build troubleshooting on GitHub Actions. A similar first-party functionality on AppVeyor inspired this tool.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/smashgg\_bracket\_tv}{TypeScript/Chrome Dev Console}{June 2019}{Hacienda Heights, CA}
+
+\begin{itemize}
+\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope so organizers can also pass into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\{\texttt{qli-installer},\texttt{aqtinstall}\}}{Azure-DevOps/Qt Framework}{May 2019 -- December 2019}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{qli-installer} is a Qt installer that installs Qt dependencies without the official Qt installer. This is a fork of the original qli-installer that adds parallel downloading.
+\item Superceded by \texttt{aqtinstaller} of which I contributed a CI system setup to to test building Qt applications on Windows, Mac, and Linux across a wide matrix.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/debauchee/\texttt{barrier}}{Azure-DevOps/Qt Framework}{May 2019 -- July 2019}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{barrier} is an open source fork of the popular KVM tool "Synergy" before Synergy went closed-source.
+\item Contributed Azure DevOps pipeline and build system for Windows build. This was done before the general availability of GitHub Actions.
+\item Used as a real test bed for QT CLI installers setups.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{nc-qemu}}{C/Make/Azure Devops}{December 2018}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{nc-qemu} is a fork of the QEMU hardware virtualizer that builds on Azure DevOps on a Windows machine to legally include Hyper-V-based virtualization support for Windows users. 
+\end{itemize}
+
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{scoreboard-retro}}{Firebase/VueJS}{Jan 2018 -- Ongoing}{Hacienda Heights, CA}
+
+\begin{itemize}
+\item \texttt{scoreboard-retro} is a rough jumbotron scoreboard made for the various tournaments run during the Southern California Retro Videogames Conventions. The rough scoreboard was made overnight and contains an "administrator" interface that can be used by the monitor at the booth. The public display is heavily animated, customized, and updates nearly instantly thanks to JavaScript and Firebase.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{nix-ptsname\_r-shim}}{Rust}{July 2017 -- Ongoing}{San Diego, CA}
+
+\begin{itemize}
+\item \texttt{nix-ptsname\_r-shim} is a lightweight shim for use in the \texttt{nix} Rust crate/library to get the psuedo-terminal name on macOS like  the Linux-specific \texttt{ptsname\_r} without the use of the "unsafe" \texttt{ptsname} function. This is useful if you use an API that opens \texttt{/dev/ptmx} to create a psuedoterminal but does not return a file handle to the slave to run \texttt{ttyname} on.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/smbc-rss-plus/\texttt{smbc-rss-plus}}{Python}{July 2015 -- Ongoing}{San Diego, CA / Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{smbc-rss-plus} takes the popular "Saturday Morning Breakfast Comic" RSS feed, scrapes every item in the feed, visits the link, extracts the "Red Button" image bonus image, and appends it to every item in the RSS feed.
+\item This was originally a conversion of a Yahoo Pipes pipeline (RIP). Later iterations required page scraping as the URL was no longer constant and that was implemented.
+\item Runs on Heroku under its cron service.
+\item This service continues to run and an informational page can be found at smbc-rss-plus.mindflakes.com
+\end{itemize}
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
@@ -187,31 +268,13 @@
 ``We can do it together!'
 \end{quote}
 
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
 \cvsection{Strengths}
 
-\cvtag{Python}
+\cvtag{Git} \cvtag{Python} \cvtag{Linux} \cvtag{GitHub}
 
-\cvtag{Git}
+\cvtag{Windows} \cvtag{Embedded Systems} 
 
-\cvtag{GitHub}
-
-\cvtag{Windows}
-
-\cvtag{Embedded Systems}
-
-\cvtag{Reverse Engineering}
+\cvtag{Reverse Engineering} 
 
 
 %% Yeah I didn't spend too much time making all the
@@ -228,13 +291,15 @@
 \cvsection{Referees}
 
 % \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
+\cvref{Phuc-Hai Huynh}{Mobivity}{phuchai.huynh@gmail.com}
+{555-555-5555}
 
 \divider
 
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
+\cvref{David Lee}{Microsoft}{g.delta@university.edu}
+{555-555-5555}
+
+\divider
 
 
 \end{paracol}
