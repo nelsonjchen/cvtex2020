@@ -68,7 +68,7 @@
 
 \begin{document}
 \name{Nelson Chen}
-\tagline{Senior Software Engineer}
+\tagline{Senior Software Engineer with an interest in rapid prototyping, testing, and productionization}
 %% You can add multiple photos on the left or right
 % \photoR{2.8cm}{Globe_High}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
@@ -103,20 +103,21 @@
 
 \cvevent{Senior Software Architect}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
 \begin{itemize}
-\item Configured Appveyor CI/CD system to compile and package Windows Python software for distribution.
 \item Configured GitHub Actions for CI/CD for the receipt interception software but for the rest of the company platforms.
-\item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7 POS machines in QEMU-based virtual machines on Google Cloud Platform. 
-\item Prototyped pytest fixture wrapping QEMU.
-\item Assisted with port of Rails 2 application to Rails 4 by creating unit and integration tests, setting up test Docker images, and configuring GitHub Actions to run test suite.
-\item Ported Windows/Linux Python 2.6 printer interception software to Python 2.7.
-\item Ported Windows/Linux Python 2.7 printer interception software to Python 3.7.
+\item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7+ POS machines in QEMU-based virtual machines on Google Cloud Platform. 
+\item Prototyped reproducible Packer-based Windows 7+ POS simulator virtual machines.
+\item Prototyped pytest fixture wrapping QEMU's control library. 
+\item Assisted with port of Rails 2 application to Rails 4 by creating Ruby Rspec unit and integration tests, setting up test Docker images, and configuring GitHub Actions to run test suite.
+\item Ported Windows/Linux Python 2.6 printer interception software and associated tests to Python 2.7.
+\item Ported Windows/Linux Python 2.7 printer interception software and associated tests to Python 3.7.
 \item Supported, extended, and maintained printer stream interception software in 30,000 locations.
+\item Configured AppVeyor CI/CD system to compile and package Windows Python software for distribution.
 \item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target.
 \item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
 \item Assisted in creation and maintaining of Windows MSI installer for receipt interception software.
 \item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
 \item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 to Windows 10 1809+.
-\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into unit test harnesses to produce or maintain parsers.
+\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain parsers.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
 \item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems.
 \item Modified pre-existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
@@ -131,7 +132,7 @@
 \begin{itemize}
 \item Proposed, completed, and performed transition and import of three company-wide issue tracking systems and two Wikis to Atlassian JIRA and Confluence.
 \item Continued maintenance of receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Assisted in production a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
+\item Assisted in production of a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
 \item Conceived and implemented low-level Windows function hooking technology for printer interception software.
 \item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
@@ -147,7 +148,7 @@
 \cvevent{Software Engineer}{SmartReceipt}{December 2012 -- March 2014}{Santa Barbara, CA}
 \begin{itemize}
 \item Contributed to whole infrastructure refactoring with Chef and Salt Stack.
-\item Contributed and maintained printer interception receipt data parser and internals of receipt interception software.
+\item Contributed and maintained printer interception receipt data parser , internals of receipt interception software, and tests for software.
 \item Developed new rapid Kitchen, Vagrant, and automated testing workflow for Chef infrastructure development and application
 \item Produced a Vagrant workflow to organization's Rails 2 application.
 \item Produced customer map with static site generators, Google Map APIs and custom styled maps. 
@@ -165,12 +166,34 @@
 \item Continued advisement of IT issues regarding emails and newsletter reachability.
 \end{itemize}
 
+\cvevent{Technical Committee Vice Chair}{UCSB Associated Students}{2009 -- 2012}{Santa Barbara, CA}
+\begin{itemize}
+
+\item Managed technical matters of committee activities including public website and internal software and hardware.
+\item Designed, setup, configure, and maintained a VMWare, Linux, Windows, and pfSense-based network, accompanying virtual machines for file sharing and network traffic management, and devised and improved upon workarounds for problematic network issues for LAN Parties.
+\item 150+ attendees for every quarter since Fall of 2009 until December 2012.
+\end{itemize}
+
+
+\cvevent{Network Consultant}{UCSB Housing and Residential}{2009 -- 2012}{Santa Barbara, CA}
+\begin{itemize}
+\item Helped residents in UCSB Residential Housing get their devices online with campus ISP/ResNet. 
+\item Developed tools to streamline configuration of these devices for
+printing to shared printers and to automatically configure the network. \item Helped physically install switches and hardware in dozens of locations on campus.
+\item Maintained internal documentation with regards to networking and procedures maintained. 
+\item Assisted users one-on-one in troubleshooting any connectivity
+issues both simple and complex. 
+\item Produced automated graphical setup tools for all major platforms to assist in configuration of 10,000 user systems with
+Printing and Wi-Fi Configuration.
+\end{itemize}
+
 \cvsection{Selected Personal Projects and Contributions}
 
-\cvevent{Owner of github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
+\cvevent{github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
 
 \begin{itemize}
 \item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli}/\texttt{speedtest-rs} tests internet speed against speedtest.net or ookla.net infrastructure.
+\item Utilizes Rust language facilities test to test fixtures and integration test locally.
 \item From 2015 to late 2019 when Ookla released their official native CLI application, this was the only native benchmark application that tested against speedtest.net infrastructure. The native CLI application is closed source.
 \end{itemize}
 
@@ -180,7 +203,16 @@
 
 \begin{itemize}
 \item \texttt{opendbc} is an open database of definition files for CAN-bus signals in non-truck vehicles. The database extensively for "openpilot" self driving vehicle project.
-\item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles.
+\item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles for automatic lane change blocking.
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/commaai/\texttt{PassShout}}{Kotlin on Android}{March 2020 -- Ongoing}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{PassShout} is a bespoke accessibility service built for Android devices running Eventbrite's Organizer app. A subjective flaw with Eventbrite's Organizer app is that the type of ticket scanned is too small on the screen. When ticket QR codes are scanned, the service will read the type of the ticket scanned out loud to make it more clear what was scanned. Additionally, the app respects Android's audio focus and is able to be used with "music" or a loud looping announcement for attendees being played by controlling those on the device. 
+\item Was to be run in 2020 but due to COVID-19 the convention was postponed and this app should have its day in 2021.
 \end{itemize}
 
 \divider
@@ -196,7 +228,7 @@
 \cvevent{github.com/nelsonjchen/smashgg\_bracket\_tv}{TypeScript/Chrome Dev Console}{June 2019}{Hacienda Heights, CA}
 
 \begin{itemize}
-\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope so organizers can also pass into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance.
+\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope which organizers can use remotely by passing into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance.
 \end{itemize}
 
 \divider
@@ -223,8 +255,17 @@
 \cvevent{github.com/nelsonjchen/\texttt{nc-qemu}}{C/Make/Azure Devops}{December 2018}{Chandler, AZ}
 
 \begin{itemize}
-\item \texttt{nc-qemu} is a fork of the QEMU hardware virtualizer that builds on Azure DevOps on a Windows machine to legally include Hyper-V-based virtualization support for Windows users. 
+\item \texttt{nc-qemu} is a fork of the QEMU hardware virtualizer that builds on Azure DevOps on a Windows machine to legally include Hyper-V-based virtualization support for Windows users and to document executable steps on how to build QEMU on Windows. 
 \end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{gooey-pyinstaller-demo}}{C/Make/Azure Devops}{August 2018}{Chandler, AZ}
+
+\begin{itemize}
+\item \texttt{gooey-pyinstaller-demo} is a tutorial I presented at the local Python meetup in Phoenix to show how to take a simple \texttt{Argparse} Python script all the way to a redistributable GUI application built under CI/CD in 5 minutes with Gooey, PyInstaller, and Azure Pipelines. 
+\end{itemize}
+
 
 
 \divider
@@ -232,7 +273,7 @@
 \cvevent{github.com/nelsonjchen/\texttt{scoreboard-retro}}{Firebase/VueJS}{Jan 2018 -- Ongoing}{Hacienda Heights, CA}
 
 \begin{itemize}
-\item \texttt{scoreboard-retro} is a rough jumbotron scoreboard made for the various tournaments run during the Southern California Retro Videogames Conventions. The rough scoreboard was made overnight and contains an "administrator" interface that can be used by the monitor at the booth. The public display is heavily animated, customized, and updates nearly instantly thanks to JavaScript and Firebase.
+\item \texttt{scoreboard-retro} is a rough jumbotron scoreboard made for the various tournaments run during the Southern California Retro Videogame Conventions. The rough scoreboard was made overnight and contains an "administrator" interface that can be used by the monitor at the booth. The public display is heavily animated, customized, and updates nearly instantly thanks to VueJS and Firebase.
 \end{itemize}
 
 \divider
@@ -245,13 +286,33 @@
 
 \divider
 
+\cvevent{github.com/nelsonjchen/\texttt{omf-theme-nelsonjchen}}{Fish Shell}{Jan 2016}{San Diego, CA}
+
+\begin{itemize}
+\item \texttt{omf-theme-nelsonjchen} is a port/adaptation of @re5et's oh-my-zsh theme for me to the oh-my-fish framework.
+\end{itemize}
+
+\divider
+
 \cvevent{github.com/smbc-rss-plus/\texttt{smbc-rss-plus}}{Python}{July 2015 -- Ongoing}{San Diego, CA / Chandler, AZ}
 
 \begin{itemize}
 \item \texttt{smbc-rss-plus} takes the popular "Saturday Morning Breakfast Comic" RSS feed, scrapes every item in the feed, visits the link, extracts the "Red Button" image bonus image, and appends it to every item in the RSS feed.
-\item This was originally a conversion of a Yahoo Pipes pipeline (RIP). Later iterations required page scraping as the URL was no longer constant and that was implemented.
-\item Runs on Heroku under its cron service.
+\item This was originally a conversion of a Yahoo Pipes pipeline (RIP). Later iterations required page scraping as the URL to bonus image was no longer constant and page scraping became required.
+\item Runs on Heroku under its cron service uploading to S3.
 \item This service continues to run and an informational page can be found at smbc-rss-plus.mindflakes.com
+\end{itemize}
+
+\divider
+
+\cvevent{github.com/nelsonjchen/\texttt{cowboystyle}}{Python}{May 2012 -- December 2012}{Santa Barbara, CA}
+
+\begin{itemize}
+\item \texttt{cowboystyle} is the source code for the /r/UCSantaBarbara subreddit CSS that is viewable on the now-old reddit.
+\item Design is extremely unique amongst all college subreddits at the time and possibly still now. Near-total conversion with prominent sidebar element "breaking" the box while keeping well within the security constraints of Reddit CSS's validator.
+\item A standard, night, and dark mode was generated into one CSS for compatibility with a popular Reddit extension that offered a night mode.
+\item Night mode was also generated for the purposes of switching the CSS to night mode regardless of browser settings when the campus was under nightfall via a bot.
+\item Included a watch script that automatically recompiles the CSS and deploys CSS to a test-subreddit for testing.
 \end{itemize}
 
 % use ONLY \newpage if you want to force a page break for
@@ -274,7 +335,7 @@
 
 \cvtag{Windows} \cvtag{Embedded Systems} 
 
-\cvtag{Reverse Engineering} 
+\cvtag{Reverse Engineering} \cvtag{CI/CD}
 
 
 %% Yeah I didn't spend too much time making all the
@@ -288,19 +349,18 @@
 
 % \divider
 
-\cvsection{Referees}
+\cvsection{References}
 
 % \cvref{name}{email}{mailing address}
-\cvref{Phuc-Hai Huynh}{Mobivity}{phuchai.huynh@gmail.com}
-{555-555-5555}
+\cvref{Phuc-Hai Huynh}{Mobivity}{phuchai.huynh@gmail.com}{619-414-0079}
 
 \divider
 
-\cvref{David Lee}{Microsoft}{g.delta@university.edu}
-{555-555-5555}
+\cvref{David Lee}{Microsoft}{davieweb@hotmail.com}{626-503-5242}
 
 \divider
 
+More references available upon request.
 
 \end{paracol}
 
