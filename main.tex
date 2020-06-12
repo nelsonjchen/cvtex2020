@@ -77,8 +77,8 @@
   % You can add your own with \printinfo{symbol}{detail}
   \email{nelson@mindflakes.com}
   \phone{626-723-3427}
-  \mailaddress{155 East Frye Road Apt 221, Chandler, AZ 85225}
-  \location{Phoenix, AZ}
+  \mailaddress{155 East Frye Road Apt 221, Chandler, AZ 85225 / 16168 High Tor Drive, Hacienda Heights, CA}
+  \location{Phoenix, AZ / Hacienda Heights, CA}
   \homepage{mindflakes.com}
   \twitter{@crazysim}
   \linkedin{linkedin.com/in/nelsonjchen}
@@ -101,7 +101,7 @@
 \cvsection{Experience}
 
 
-\cvevent{Senior Software Architect}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
+\cvevent{Senior Software Engineer}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
 \begin{itemize}
 \item Ported PyInstaller-packaged Windows printer interception software and associated tests to CentOS 6 and 7 based systems also using PyInstaller.
 \item Configured GitHub Actions for CI/CD for the receipt interception software but for the rest of the company platforms.
@@ -109,18 +109,16 @@
 \item Prototyped reproducible Packer-based Windows 7+ POS simulator virtual machines.
 \item Prototyped pytest fixture wrapping QEMU's control library. 
 \item Assisted with port of Rails 2 application to Rails 4 by creating Ruby Rspec unit and integration tests, setting up test Docker images, and configuring GitHub Actions to run test suite.
-\item Ported Windows Python 2.6 printer interception software and associated tests to Python 2.7.
-\item Ported Windows Python 2.7 printer interception software and associated tests to Python 3.7.
-\item Supported, extended, and maintained printer stream interception software in 30,000 locations.
+\item Ported Windows Python 2.6 printer interception software and associated tests to Python 2.7 and 3.7.
 \item Configured AppVeyor CI/CD system to compile and package Windows Python software for distribution.
 \item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target using PyInstaller.
 \item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
 \item Assisted in creation and maintaining of Windows MSI installer for receipt interception software.
 \item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
 \item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 RTM to Windows 10 1809+.
-\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain parsers.
+\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain receipt parsers.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
-\item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems.
+\item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems processing 200GB of logs every day.
 \item Modified pre-existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
 \item Ongoing advisement to configuring JIRA to organization workflow.
 \item Continued low-level reverse engineering and investigation of various point of sale software and components for integration.
@@ -138,7 +136,7 @@
 \item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
 \item Supported, extended, and maintained printer stream interception software to 30,000 locations.
-\item Developed VueJS/Rust Printer simulator for EPSON thermal receipt printers for internal developer use.
+\item Developed VueJS/Rust Printer simulator for EPSON and NCR thermal receipt printers for internal developer use.
 \item Proposed, completed, and performed adoption of CI/CD for receipt interception software using CircleCI for building the NSIS installers and associated TGZ update for every commit.
 \item Proposed, completed, and performed transition and import of existing Atlassian HipChat internal message system to Slack.
 \item Continued low-level and high-level reverse engineering and investigation of various point of sale software and components for integration.
@@ -195,7 +193,7 @@ Printing and Wi-Fi Configuration.
 \begin{itemize}
 \item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli} and \texttt{speedtest-rs} test internet speed against speedtest.net or ookla.net infrastructure. It's roughly accurate for domestic connections.
 \item Utilizes Rust language facilities test to test fixtures and integration test locally including a local loopback server.
-\item From 2015 to late 2019 when Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native benchmark application that tested against speedtest.net infrastructure. The native CLI application is closed source but this is open and FOSS.
+\item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
 \end{itemize}
 
 \divider
@@ -222,7 +220,7 @@ Printing and Wi-Fi Configuration.
 \cvevent{github.com/nelsonjchen/\texttt{smashgg\_bracket\_tv}}{TypeScript/Chrome Dev Console}{June 2019}{Hacienda Heights, CA}
 
 \begin{itemize}
-\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope which organizers can use remotely by passing into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance.
+\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope which organizers can use remotely by passing into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance on another laptop.
 \end{itemize}
 
 \divider
@@ -360,7 +358,7 @@ Printing and Wi-Fi Configuration.
 
 \cvtag{Windows} \cvtag{Embedded Systems} 
 
-\cvtag{Reverse Engineering} \cvtag{CI/CD}
+\cvtag{Reverse Engineering} \cvtag{CI/CD} \cvtag{Tooling}
 
 
 %% Yeah I didn't spend too much time making all the
