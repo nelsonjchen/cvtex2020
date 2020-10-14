@@ -103,19 +103,21 @@
 
 \cvevent{Senior Software Engineer}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
 \begin{itemize}
+\item Refurbished and maintain C++ system call hooking technology for "new" POS systems such as MICROS RES 3700 and more.
+\item Prototyped Always-On top C\# Windows WPF Reactive Extensions application for Curbside Pickup and Delivery with simulated backend.
 \item Ported PyInstaller-packaged Windows printer interception software and associated tests to CentOS 6 and 7 based systems also using PyInstaller.
 \item Configured GitHub Actions for CI/CD for the receipt interception software but for the rest of the company platforms.
 \item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7+ POS machines in QEMU-based virtual machines on Google Cloud Platform. 
 \item Prototyped reproducible Packer-based Windows 7+ POS simulator virtual machines.
-\item Prototyped pytest fixture wrapping QEMU's control library. 
-\item Assisted with port of Rails 2 application to Rails 4 by creating Ruby Rspec unit and integration tests, setting up test Docker images, and configuring GitHub Actions to run test suite.
+\item Prototyped pytest fixture wrapping QEMU's bundled control library. 
+\item Assisted with port of Rails 2 application to Rails 4 by creating Ruby Rspec unit and integration tests, setting up testing Docker images, and configuring GitHub Actions to run test suite.
 \item Ported Windows Python 2.6 printer interception software and associated tests to Python 2.7 and 3.7.
 \item Configured AppVeyor CI/CD system to compile and package Windows Python software for distribution.
 \item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target using PyInstaller.
 \item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Assisted in creation and maintaining of Windows MSI installer for receipt interception software.
+\item Assisted in creation and maintaining of Wix-based Windows MSI installer for receipt interception software.
 \item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
-\item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 RTM to Windows 10 1809+.
+\item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 RTM/Gold to Windows 10 1809+.
 \item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain receipt parsers.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
 \item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems processing 200GB of logs every day.
@@ -132,7 +134,7 @@
 \item Proposed, completed, and performed transition and import of three company-wide issue tracking systems and two Wikis to Atlassian JIRA and Confluence.
 \item Continued maintenance of receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
 \item Assisted in production of a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
-\item Conceived and implemented low-level Windows function hooking technology for printer interception software.
+\item Conceived and implemented low-level Windows function hooking technology called "\textbf{Seamless Capture}" for printer interception software to intercept print data from software without software reconfiguration.
 \item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
 \item Continued support of Django backend and Rails frontend for receipt interception software.
 \item Supported, extended, and maintained printer stream interception software to 30,000 locations.
@@ -170,7 +172,7 @@
 
 \item Managed technical matters of committee activities including public website and internal software and hardware.
 \item Designed, setup, configure, and maintained a VMWare, Linux, Windows, and pfSense-based network, accompanying virtual machines for file sharing and network traffic management, and devised and improved upon workarounds for problematic network issues for LAN Parties.
-\item 150+ attendees for every quarter since Fall of 2009 until December 2012.
+\item 150+ attendees for every quarter since Fall of 2009 through December 2012.
 \end{itemize}
 
 
@@ -188,12 +190,25 @@ Printing and Wi-Fi Configuration.
 
 \cvsection{Selected Personal Projects and Contributions}
 
+\cvevent{github.com/HackyExtensionsForZoomMeetings/\texttt{BreakoutRoomsBotForZoomMeetings}}{Javascript/Chrome Extensions}{June 2020 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
+
+\begin{itemize}
+\item Breakout Rooms Bot for Zoom Meetings provides self-switching of Zoom Breakout Rooms for Zoom Meeting Attendees pre-September 2020 Zoom update which added native self-switching. Attendees can self-assign rooms by using chat commands or renaming themselves to a specific format.
+\item Reverse engineered Zoom Web Client's React+Redux minified code base and converted Redux store updates to RxJS observables which were then connected together.
+\item Reverse engineered undocumented and non-public Websocket protocol to discover fast assignment method.
+\item Incorporated fuzzy searching library into bot to make usage much more ergonomic.
+\item Implemented as a Chrome extension to allow rapid deployment on the Chrome Web Store.
+\item Worked with users and Chrome Developer Console Profiler Debug tooling to get bot performance profile up to standards required for 200+ attendee meetings.
+\item After native self-assignment was added, produced GitHub organization and example code for anyone else wishing to add additional "bots" of other nature for their Zoom meetings. Examples of possible use include more Twitch-like amenities for use in classroom settings.
+\end{itemize}
+
 \cvevent{github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
 
 \begin{itemize}
 \item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli} and \texttt{speedtest-rs} test internet speed against speedtest.net or ookla.net infrastructure. It's roughly accurate for domestic connections.
 \item Utilizes Rust language facilities test to test fixtures and integration test locally including a local loopback server.
 \item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
+\item Unfortunately, this still only tests with the legacy HTTP fallback that its \texttt{speedtest-cli} inspiration uses, but a new socket-based approach and default is planned.
 \end{itemize}
 
 \divider
@@ -203,16 +218,18 @@ Printing and Wi-Fi Configuration.
 \begin{itemize}
 \item \texttt{opendbc} is an open database of definition files for CAN-bus signals in non-truck vehicles. The database extensively for "openpilot" self driving vehicle project.
 \item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles for automatic lane change blocking.
+\item Automatic lane change blocking from Blind Spot Monitor for Toyota and Hyundai in \texttt{openpilot} landed in OpenPilot 7.7 and was released in July 2020.
 \end{itemize}
 
 
 
 \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{reverse-rdp-windows-github-actions}}{GitHub Actions}{December 2019}{San Diego, CA}
+\cvevent{github.com/nelsonjchen/\texttt{reverse-rdp-windows-github-actions}}{GitHub Actions/PowerShell/Windows Administration}{December 2019}{San Diego, CA}
 
 \begin{itemize}
 \item \texttt{reverse-rdp-windows-github-actions} is a GitHub Actions demo/instruction to reverse RDP into a Windows GitHub Actions build box. This is extremely useful for build troubleshooting on GitHub Actions. A similar first-party functionality on AppVeyor inspired this tool.
+\item Starred on GitHub by many senior developers in the Docker community.
 \end{itemize}
 
 \divider
@@ -247,8 +264,8 @@ Printing and Wi-Fi Configuration.
 \cvevent{github.com/commaai/\texttt{PassShout}}{Kotlin on Android}{Feb 2019 -- Ongoing}{Chandler, AZ}
 
 \begin{itemize}
-\item \texttt{PassShout} is a bespoke accessibility service built for Android devices running Eventbrite's Organizer app. A subjective flaw with Eventbrite's Organizer app is that the type of ticket scanned is too small on the screen. When ticket QR codes are scanned, the service will read the type of the ticket scanned out loud to make it more clear what was scanned. Additionally, the app respects Android's audio focus and is able to be used with "music" or a loud looping announcement for attendees being played by controlling those on the device. 
-\item Was to be run in 2020's convention but due to COVID-19 the convention was postponed and this app will have its day in 2021.
+\item \texttt{PassShout} is a bespoke accessibility service built for Android devices running Eventbrite's Organizer app. A subjective flaw with Eventbrite's Organizer app is that the type of ticket scanned is too small on the screen. When ticket QR codes are scanned, the service will read the type of the ticket scanned out loud to make it more clear what was scanned. Additionally, the app respects Android's audio focus and is able to be used with "music" or a loud looping announcement for attendees being played by controlling those on the device. This is useful for contiuously reminding guests to get out their tickets while the badge handler is moving down the line.
+\item Was to be run in 2020's convention but due to COVID-19 the convention was postponed and this app will have its day in 2021 or 2022, maybe.
 \end{itemize}
 
 \divider
@@ -375,7 +392,7 @@ Printing and Wi-Fi Configuration.
 \cvsection{References}
 
 % \cvref{name}{email}{mailing address}
-\cvref{Phuc-Hai Huynh}{Mobivity}{phuchai.huynh@gmail.com}{619-414-0079}
+\cvref{Phuc-Hai Huynh}{Mitek Systems}{phuchai.huynh@gmail.com}{619-414-0079}
 
 \divider
 
