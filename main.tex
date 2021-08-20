@@ -78,7 +78,7 @@
   \email{nelson@mindflakes.com}
   \phone{626-723-3427}
   \mailaddress{155 East Frye Road Apt 221, Chandler, AZ 85225 / 16168 High Tor Drive, Hacienda Heights, CA}
-  \location{Phoenix, AZ / Hacienda Heights, CA}
+  \location{Phoenix, AZ / Los Angeles, CA}
   \homepage{mindflakes.com}
   \twitter{@crazysim}
   \linkedin{linkedin.com/in/nelsonjchen}
@@ -103,6 +103,8 @@
 
 \cvevent{Senior Software Engineer}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
 \begin{itemize}
+\item Produced Python and Typescript AWS CDK development environments for Data Warehouse ingestion system and other legacy systems. This includes legacy Elastic Beanstalk Custom Resources.
+\item Produced self-contained single-DLL C\# Micros-Oracle Simphony Integration for Mobivity Offers and Promotions platform with public API, custom GUI, and configuration.
 \item Produced SOAP API POS Integration for Par-Brink pipeline to existing Data Warehouse ingestion system via AWS Lambda and AWS Batch.
 \item Refurbished and maintain C++ system call hooking technology for "new" POS systems such as MICROS RES 3700 and more.
 \item Prototyped Always-On top C\# Windows WPF Reactive Extensions application for Curbside Pickup and Delivery with simulated backend.
@@ -159,14 +161,14 @@
 \item Began reverse engineering and investigation of various point of sale software systems and components for integration.
 \end{itemize}
 
-% \cvevent{Web Architect and Technical Advisor (Volunteer)}{Because of Hope 501(c)(3)}{December 2012 -- Ongoing}{Santa Barbara, CA}
-% \begin{itemize}
-% \item Produced VueJS widgets to interactively list students in scholarship program for inclusion on Shopify-based iteration of site
-% \item Produced complete nanoc static site
-% \item Setup Heroku-based review system and CI/CD to deploy sites and widgets.
-% \item Continued maintenance of widgets used on Shopify site,
-% \item Continued advisement of IT issues regarding emails and newsletter reachability.
-% \end{itemize}
+\cvevent{Web Architect and Technical Advisor (Volunteer)}{Because of Hope 501(c)(3)}{December 2012 -- Ongoing}{Santa Barbara, CA}
+\begin{itemize}
+\item Produced VueJS widgets to interactively list students in scholarship program for inclusion on Shopify-based iteration of site
+\item Produced complete nanoc static site
+\item Setup Heroku-based review system and CI/CD to deploy sites and widgets.
+\item Continued maintenance of widgets used on Shopify site,
+\item Continued advisement of IT issues regarding emails and newsletter reachability.
+\end{itemize}
 
 % \cvevent{Technical Committee Vice Chair}{UCSB Associated Students}{2009 -- 2012}{Santa Barbara, CA}
 % \begin{itemize}
@@ -191,7 +193,28 @@
 
 \cvsection{Selected Personal Projects and Contributions}
 
-\cvevent{github.com/HackyExtensionsForZoomMeetings/\texttt{BreakoutRoomsBotForZoomMeetings}}{Javascript/Chrome Extensions}{June 2020 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
+\cvevent{github.com/nelsonjchen/\texttt{cell-shield-go}}{Go/Google Cloud Run/Vue.js}{July 2021 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
+
+\begin{itemize}
+\item Cell Shield is a service that allows backing a shields.io badge with a cell from a public Google Spreadsheet.
+\item Uses Google APIs and Authentication to access Google Spreadsheet workbooks for color and textual information.
+\item Hosted on Google Cloud Run for low maintenance, uptime, and authentication management in Google ecosystem.
+\item Simple Vue.JS front-end to provide easy to use GUI to embed badges for Markdown, BBCode, and HTML.
+\item Has been used for exposing bounty and prize amounts of \$12,000 and more.
+\end{itemize}
+
+\cvevent{github.com/nelsonjchen/\texttt{github-wiki-see-rs}}{Rust/Google Cloud Run/BigQuery/Python}{April 2021 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
+
+\begin{itemize}
+\item GitHub Wiki Search Engine Enablement allows GitHub Wikis to be indexed by search engines. There's no robots.txt on the site preventing indexing of wiki content and wiki content proxied from GitHub and served from this domain will be crawled and indexed.
+\item If you've used Google to search for technical documentation, you are using my service. Especially if you go to Page 3 or more.
+\item Hosted on Google Cloud Run for low maintenance, low cost, and uptime in Google ecosystem.
+\item Uses an older Actix-Web backend to proxy and parse GitHub HTML for redisplay.
+\item Sitemaps are seeded with data from GH Archive dataset for Google to discover URLs.
+\item Gets about 12,000 clicks and about 700,000 impressions every day.
+\end{itemize}
+
+\cvevent{github.com/HackyExtensionsForZoomMeetings/\texttt{BreakoutRoomsBotForZoomMeetings}}{Javascript/Chrome Extensions}{June 2020 -- December 2020}{Chandler, AZ / Hacienda Heights, CA}
 
 \begin{itemize}
 \item Breakout Rooms Bot for Zoom Meetings provides self-switching of Zoom Breakout Rooms for Zoom Meeting Attendees pre-September 2020 Zoom update which added native self-switching. Attendees can self-assign rooms by using chat commands or renaming themselves to a specific format.
@@ -208,7 +231,7 @@
 \begin{itemize}
 \item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli} and \texttt{speedtest-rs} test internet speed against speedtest.net or ookla.net infrastructure. It's roughly accurate for domestic connections.
 \item Utilizes Rust language facilities test to test fixtures and integration test locally including a local loopback server.
-\item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
+\item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native and non-garbage-collected benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
 % \item Unfortunately, this still only tests with the legacy HTTP fallback that its \texttt{speedtest-cli} inspiration uses, but a new socket-based approach and default is planned.
 \end{itemize}
 
@@ -349,7 +372,7 @@
 \cvevent{github.com/nelsonjchen/\texttt{cowboystyle}}{Python}{May 2012 -- December 2012}{Santa Barbara, CA}
 
 \begin{itemize}
-\item \texttt{cowboystyle} is the source code for the /r/UCSantaBarbara subreddit CSS that is viewable on the now-old reddit.
+\item \texttt{cowboystyle} is the source code for the /r/UCSantaBarbara subreddit CSS that is viewable on the now-old reddit at https://old.reddit.com/r/UCSantaBarbara .
 \item Design is extremely unique amongst all college subreddits at the time and possibly still now. Used Selenium to take screenshots of all other college subreddits for viewing in a gallery. Near-total conversion with prominent sidebar element "breaking" the box while keeping well within the security constraints of Reddit CSS's validator.
 \item A standard, night, and dark mode was generated into one CSS for compatibility with a popular Reddit extension that offered a night mode.
 \item Night mode was also generated for the purposes of switching the CSS to night mode regardless of browser settings when the campus was under nightfall via a bot.
@@ -406,6 +429,12 @@
 \divider
 
 More references available upon request.
+
+
+\cvsection{Patents}
+
+\texttt{US10949868B1} - Method and system for single use of electronic retailer coupons and referral program. Note: I am incorrectly omitted as an inventor. I definitively contributed the secure and cheap on-site TOTP MFA token verification claim. Reference from Alex Shah (the only listed Inventor) and/or Mobivity can be provided on request.
+
 
 \end{paracol}
 
