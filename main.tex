@@ -80,7 +80,7 @@
   \mailaddress{155 East Frye Road Apt 221, Chandler, AZ 85225 / 16168 High Tor Drive, Hacienda Heights, CA}
   \location{Phoenix, AZ / Los Angeles, CA}
   \homepage{mindflakes.com}
-  \twitter{@crazysim}
+%   \twitter{@crazysim}
   \linkedin{linkedin.com/in/nelsonjchen}
   \github{github.com/nelsonjchen}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
@@ -101,73 +101,59 @@
 \cvsection{Experience}
 
 
-\cvevent{Senior Software Engineer}{Mobivity}{December 2017 - Ongoing}{Chandler, AZ}
+\cvevent{Senior Software Engineer}{Mobivity}{December 2012 - Ongoing}{San Diego, CA/Chandler, AZ}
 \begin{itemize}
-\item Produced Python and Typescript AWS CDK development environments for Data Warehouse ingestion system and other legacy systems. This includes legacy Elastic Beanstalk Custom Resources.
-\item Produced self-contained single-DLL C\# Micros-Oracle Simphony Integration for Mobivity Offers and Promotions platform with public API, custom GUI, and configuration.
-\item Produced SOAP API POS Integration for Par-Brink pipeline to existing Data Warehouse ingestion system via AWS Lambda and AWS Batch.
-\item Refurbished and maintain C++ system call hooking technology for "new" POS systems such as MICROS RES 3700 and more.
-\item Prototyped Always-On top C\# Windows WPF Reactive Extensions application for Curbside Pickup and Delivery with simulated backend.
-\item Ported PyInstaller-packaged Windows printer interception software and associated tests to CentOS 6 and 7 based systems also using PyInstaller.
-\item Configured GitHub Actions for CI/CD for the receipt interception software but for the rest of the company platforms.
-\item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7+ POS machines in QEMU-based virtual machines on Google Cloud Platform. 
-\item Prototyped reproducible Packer-based Windows 7+ POS simulator virtual machines.
-\item Prototyped pytest fixture wrapping QEMU's bundled control library. 
-\item Assisted with and completed port of Rails 2 application to Rails 4 by creating Ruby Rspec unit and integration tests, setting up testing Docker images, and configuring GitHub Actions to run test suite via Docker Compose.
-\item Ported Windows Python 2.6 printer interception software and associated tests to Python 2.7 and 3.7 with a codebase that runs on both runtimes.
-\item Configured AppVeyor CI/CD system to compile and package Windows Python software for distribution.
-\item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target using PyInstaller.
-\item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Assisted in creation and maintaining of Wix-based Windows MSI installer for receipt interception software.
-\item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
-\item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 RTM/Gold to Windows 10 1809+.
-\item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain receipt parsers.
-\item Continued support of Django backend and Rails frontend for receipt interception software.
-\item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems processing 200GB of logs every day.
-\item Modified pre-existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
-\item Ongoing advisement to configuring JIRA to organization workflow.
-\item Continued low-level reverse engineering and investigation of various point of sale software and components for integration.
-\end{itemize}
-
-\divider
-
-\cvevent{Senior Software Engineer}{Mobivity}{March 2014 - December 2017}{San Diego, CA} 
-
-\begin{itemize}
-\item Proposed, completed, and performed transition and import of three company-wide issue tracking systems (JIRA, Trello, and Fogbugz) and two Wikis (Trac, and GitHub Wiki) to Atlassian JIRA and Confluence.
-\item Continued maintenance of receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
-\item Assisted in production of a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
-\item Conceived and implemented low-level Windows function hooking technology called "\textbf{Seamless Capture}" for printer interception software to intercept print data from software without software reconfiguration.
-\item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
-\item Continued support of Django backend and Rails frontend for receipt interception software.
-\item Supported, extended, and maintained printer stream interception software to 30,000 locations.
+\item Produced Python and Typescript AWS CDK development environments for Data Warehouse ingestion system and other legacy systems. This includes legacy Elastic Beanstalk Custom Resources. Allowed rapid developer setup and automated testing with real, but ephemeral resources.
+\item Produced self-contained single-DLL C\# Micros-Oracle Simphony Integration for Mobivity Offers and Promotions platform with public API, custom GUI, and configuration for on-site location product.
+\item Produced SOAP API POS Integration for Par-Brink pipeline to existing Data Warehouse ingestion system via AWS Lambda and AWS Batch for Data Warehouse product.
+% \item Refurbished and maintain C++ system call hooking technology for "new" POS systems such as MICROS RES 3700 and more.
+% \item Prototyped Always-On top C\# Windows WPF Reactive Extensions application for Curbside Pickup and Delivery with simulated backend.
+\item Ported PyInstaller-packaged Windows printer interception software and associated tests to CentOS 6 and 7 based systems also using PyInstaller to expand supported platform offerings.
+\item Configured GitHub Actions for CI/CD for the receipt interception software and other the company platforms to improve developer productivity across the board.
+\item Prototyped GitLab CI/CD with Kubernetes to test and build ephermeral Windows XP and Windows 7+ POS machines in QEMU-based virtual machines on GCP for end to end integration testing. 
+% \item Prototyped reproducible Packer-based Windows 7+ POS simulator virtual machines.
+% \item Prototyped pytest fixture wrapping QEMU's bundled control library.
+\item Assisted with and completed port of Rails 2 application to Rails 4 by creating Rspec unit and integration tests, setting up testing Docker images, and configuring GitHub Actions to run test suite via Docker Compose.
+\item Ported Windows Python 2.6 printer interception software and associated tests to Python 2.7 and 3.7 with a codebase that runs on both runtimes for soft upgrade transition.
+% \item Configured AppVeyor CI/CD system to compile and package Windows Python software for distribution.
+\item Ported legacy developer-system-style installation of deployed point of sale software and runtime to a packaged and single folder and installation footprint with bundled runtime as an additional target using PyInstaller to improve installation and upgrade success.
+% \item Continued maintenance of receipt data parser and internals for various Point of Sale systems such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
+% \item Assisted in creation and maintaining of Wix-based Windows MSI installer for receipt interception software.
+% \item Debugged, produced, and publicly documented previously unknown and novel method to directly load OpenSSL x.509 Base64 "PEM" certificates in the C\# on Windows "HttpClient" without pre-conversion or import of input certificate formats.
+% \item Produced, and publicly documented Windows PKI code signing for product executables with SHA1 certificates and SHA256 certificates for installation, user space and kernel space loading for Windows 7 RTM/Gold to Windows 10 1809+.
+\item Contributed to the development of Patent \texttt{US10949868B1}: "Method and system for single use of electronic retailer coupons and referral program"
+% \item Produced Gooey GUI and PyInstaller based tool on multiple platforms to process CSV data into Python unit test harnesses to produce or maintain receipt parsers.
+% \item Continued support of Django backend and Rails frontend for receipt interception software.
+% \item Setup AWS Lambda and AWS ElasticSearch-based system for collecting software logs from 30,000 agents running on customer POS systems processing 200GB of logs every day.
+% \item Modified pre-existing VueJS/Rust Printer simulator for NCR thermal receipt printers for developer use.
+% \item Ongoing advisement to configuring JIRA to organization workflow.
+% \item Continued low-level reverse engineering and investigation of various point of sale software and components for integration.
+% \item Proposed, completed, and performed transition and import of three company-wide issue tracking systems (JIRA, Trello, and Fogbugz) and two Wikis (Trac, and GitHub Wiki) to Atlassian JIRA and Confluence.
+% \item Continued maintenance of receipt data parser and internals for various Point of Sales such as NCR Aloha, Oracle Simphony, SubwayPOS, and many more.
+% \item Assisted in production of a Windows Node-Webkit (predecessor to Electron) and React based installer for receipt interception software.
+% \item Conceived and implemented low-level Windows function hooking technology called "\textbf{Seamless Capture}" for printer interception software to intercept print data from software without software reconfiguration.
+% \item Helped create and produce Google App Engine backends for software installer business logic, analysis, and reporting.
+% \item Continued support of Django backend and Rails frontend for receipt interception software.
+% \item Supported, extended, and maintained printer stream interception software to 30,000 locations.
 \item Developed VueJS/Rust Printer simulator for EPSON and NCR thermal receipt printers for internal developer use.
-\item Proposed, completed, and performed adoption of CI/CD for receipt interception software using CircleCI for building the NSIS installers and associated TGZ update for every commit.
-\item Proposed, completed, and performed transition and import of existing Atlassian HipChat internal message system to Slack.
-\item Continued low-level and high-level reverse engineering and investigation of various point of sale software and components for integration.
-\end{itemize}
-
-\divider
-
-\cvevent{Software Engineer}{SmartReceipt}{December 2012 -- March 2014}{Santa Barbara, CA}
-\begin{itemize}
-\item Contributed to whole infrastructure refactoring with Chef and Salt Stack.
+% \item Proposed, completed, and performed adoption of CI/CD for receipt interception software using CircleCI for building the NSIS installers and associated TGZ update for every commit.
+% \item Proposed, completed, and performed transition and import of existing Atlassian HipChat internal message system to Slack.
+% \item Continued low-level and high-level reverse engineering and investigation of various point of sale software and components for integration.
+% \item Contributed to whole infrastructure refactoring with Chef and Salt Stack.
 \item Contributed and maintained printer interception receipt data parser , internals of receipt interception software, and tests for software.
-\item Developed new rapid Kitchen, Vagrant, and automated testing workflow for Chef infrastructure development and application
-\item Produced a Vagrant workflow to organization's Rails 2 application.
-\item Produced customer map with static site generators, Google Map APIs and custom styled maps. 
-\item Migrated version control practices to Git best practices.
-\item Supported, extended, and maintained printer stream interception software in 3,000 locations.
-\item Began reverse engineering and investigation of various point of sale software systems and components for integration.
+% \item Developed new rapid Kitchen, Vagrant, and automated testing workflow for Chef infrastructure development and application
+% \item Produced Vagrant workflow for organization's Rails 2 application.
+% \item Produced customer map with static site generators, Google Map APIs and custom styled maps. 
+% \item Migrated version control practices to Git best practices.
+% \item Supported, extended, and maintained printer stream interception software in 3,000 locations.
+% \item Began reverse engineering and investigation of various point of sale software systems and components for integration.
 \end{itemize}
 
 \cvevent{Web Architect and Technical Advisor (Volunteer)}{Because of Hope 501(c)(3)}{December 2012 -- Ongoing}{Santa Barbara, CA}
 \begin{itemize}
 \item Produced VueJS widgets to interactively list students in scholarship program for inclusion on Shopify-based iteration of site
-\item Produced complete nanoc static site
 \item Setup Heroku-based review system and CI/CD to deploy sites and widgets.
-\item Continued maintenance of widgets used on Shopify site,
-\item Continued advisement of IT issues regarding emails and newsletter reachability.
+\item Continued maintenance of widgets used on Shopify site and advisement of IT issues regarding emails and newsletter reach-ability.
 \end{itemize}
 
 % \cvevent{Technical Committee Vice Chair}{UCSB Associated Students}{2009 -- 2012}{Santa Barbara, CA}
@@ -196,25 +182,26 @@
 \cvevent{github.com/nelsonjchen/\texttt{cell-shield-go}}{Go/Google Cloud Run/Vue.js}{July 2021 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
 
 \begin{itemize}
-\item Cell Shield is a service that allows backing a shields.io badge with a cell from a public Google Spreadsheet.
+\item Cell Shield (cellshield.info) is a service that allows backing a shields.io badge with a cell from a public Google Spreadsheet.
 \item Uses Google APIs and Authentication to access Google Spreadsheet workbooks for color and textual information.
 \item Hosted on Google Cloud Run for low maintenance, uptime, and authentication management in Google ecosystem.
 \item Simple Vue.JS front-end to provide easy to use GUI to embed badges for Markdown, BBCode, and HTML.
-\item Has been used for exposing bounty and prize amounts of \$12,000 and more.
+\item Used for exposing bounty and prize amounts of \$12,000 and more.
+\item Currently exploring commercialization potential for enterprise wikis such as Confluence and Office 365 support.
 \end{itemize}
 
 \cvevent{github.com/nelsonjchen/\texttt{github-wiki-see-rs}}{Rust/Google Cloud Run/BigQuery/Python}{April 2021 -- Ongoing}{Chandler, AZ / Hacienda Heights, CA}
 
 \begin{itemize}
-\item GitHub Wiki Search Engine Enablement allows GitHub Wikis to be indexed by search engines. There's no robots.txt on the site preventing indexing of wiki content and wiki content proxied from GitHub and served from this domain will be crawled and indexed.
-\item If you've used Google to search for technical documentation, you are using my service. Especially if you go to Page 3 or more.
+\item GitHub Wiki Search Engine Enablement (github-wiki-see.page) allows GitHub Wikis to be indexed by search engines. 
+\item Used by all who have ever used Google to search for technical documentation on GitHub.
 \item Hosted on Google Cloud Run for low maintenance, low cost, and uptime in Google ecosystem.
-\item Uses an older Actix-Web backend to proxy and parse GitHub HTML for redisplay.
-\item Sitemaps are seeded with data from GH Archive dataset for Google to discover URLs.
-\item Gets about 12,000 clicks and about 700,000 impressions every day.
+\item Actix-Web backend to proxy and parse GitHub HTML for redisplay.
+\item Sitemaps continuouslly generated from GH Archive dataset.
+\item 20,000 clicks and about 1,000,000 impressions every day.
 \end{itemize}
 
-\cvevent{github.com/HackyExtensionsForZoomMeetings/\texttt{BreakoutRoomsBotForZoomMeetings}}{Javascript/Chrome Extensions}{June 2020 -- December 2020}{Chandler, AZ / Hacienda Heights, CA}
+\cvevent{github.com/HackyExtensionsForZoomMeetings/\texttt{BreakoutRoomsBotForZoomMeetings}}{Javascript/Chrome Extension}{June 2020 -- December 2020}{Chandler, AZ / Hacienda Heights, CA}
 
 \begin{itemize}
 \item Breakout Rooms Bot for Zoom Meetings provides self-switching of Zoom Breakout Rooms for Zoom Meeting Attendees pre-September 2020 Zoom update which added native self-switching. Attendees can self-assign rooms by using chat commands or renaming themselves to a specific format.
@@ -226,52 +213,51 @@
 \item After native self-assignment was added, produced GitHub organization and example code for anyone else wishing to add additional "bots" of other nature for their Zoom meetings. Examples of possible use include more Twitch-like amenities for use in classroom settings.
 \end{itemize}
 
-\cvevent{github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
+% \cvevent{github.com/nelsonjchen/\texttt{speedtest-rs}}{Rust}{December 2015 -- Ongoing}{San Diego, CA}
 
-\begin{itemize}
-\item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli} and \texttt{speedtest-rs} test internet speed against speedtest.net or ookla.net infrastructure. It's roughly accurate for domestic connections.
-\item Utilizes Rust language facilities test to test fixtures and integration test locally including a local loopback server.
-\item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native and non-garbage-collected benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
-% \item Unfortunately, this still only tests with the legacy HTTP fallback that its \texttt{speedtest-cli} inspiration uses, but a new socket-based approach and default is planned.
-\end{itemize}
+% \begin{itemize}
+% \item Rust-based conversion of popular Python \texttt{speedtest-cli} tool. \texttt{speedtest-cli} and \texttt{speedtest-rs} test internet speed against speedtest.net or ookla.net infrastructure. It's roughly accurate for domestic connections.
+% \item Utilizes Rust language facilities test to test fixtures and integration test locally including a local loopback server.
+% \item From 2015 to late 2019, before Ookla released their official native CLI application, \texttt{speedtest-rs} was the only native and non-garbage-collected benchmark application that tested against speedtest.net infrastructure. The Ookla native CLI application is closed source but \texttt{speedtest-rs} is open and FOSS.
+% % \item Unfortunately, this still only tests with the legacy HTTP fallback that its \texttt{speedtest-cli} inspiration uses, but a new socket-based approach and default is planned.
+% \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/commaai/\texttt{opendbc}}{Vector DBC}{March 2020 -- Ongoing}{Chandler, AZ}
+% \cvevent{github.com/commaai/\texttt{opendbc}}{Vector DBC}{March 2020 -- Ongoing}{Chandler, AZ}
 
-\begin{itemize}
-\item \texttt{opendbc} is an open database of definition files for CAN-bus signals in non-truck vehicles. The database is used extensively for the "openpilot" self driving vehicle project.
-\item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles for automatic lane change blocking.
-\item Automatic lane change blocking from Blind Spot Monitor for Toyota and Hyundai in \texttt{openpilot} landed in OpenPilot 7.7 and was released in July 2020.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{opendbc} is an open database of definition files for CAN-bus signals in non-truck vehicles. The database is used extensively for the "openpilot" self driving vehicle project.
+% \item Contributed reverse engineering of automobile CAN-bus signals for Blind Spot Monitor functionality of the 2020 Toyota Corolla Hatchback and other Toyota Safety Sense 2.0 vehicles for automatic lane change blocking.
+% \item Automatic lane change blocking from Blind Spot Monitor for Toyota and Hyundai in \texttt{openpilot} landed in OpenPilot 7.7 and was released in July 2020.
+% \end{itemize}
 
 
+% \divider
 
-\divider
+% \cvevent{gitlab.com/nelsonjchen/\texttt{reverse-rdp-windows-github-actions}}{GitHub Actions/PowerShell/Windows Administration}{December 2019}{San Diego, CA}
 
-\cvevent{github.com/nelsonjchen/\texttt{reverse-rdp-windows-github-actions}}{GitHub Actions/PowerShell/Windows Administration}{December 2019}{San Diego, CA}
+% \begin{itemize}
+% \item \texttt{reverse-rdp-windows-github-actions} is a GitHub Actions demo/instruction to reverse RDP into a Windows GitHub Actions build box. This is extremely useful for build troubleshooting on GitHub Actions. A similar first-party functionality on AppVeyor inspired this tool.
+% \item Was starred on GitHub by many senior developers in the Docker community.
+% \end{itemize}
 
-\begin{itemize}
-\item \texttt{reverse-rdp-windows-github-actions} is a GitHub Actions demo/instruction to reverse RDP into a Windows GitHub Actions build box. This is extremely useful for build troubleshooting on GitHub Actions. A similar first-party functionality on AppVeyor inspired this tool.
-\item Starred on GitHub by many senior developers in the Docker community.
-\end{itemize}
+% \divider
 
-\divider
+% \cvevent{github.com/nelsonjchen/\texttt{smashgg\_bracket\_tv}}{TypeScript/Chrome Dev Console}{June 2019}{Hacienda Heights, CA}
 
-\cvevent{github.com/nelsonjchen/\texttt{smashgg\_bracket\_tv}}{TypeScript/Chrome Dev Console}{June 2019}{Hacienda Heights, CA}
+% \begin{itemize}
+% \item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope which organizers can use remotely by passing into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance on another laptop.
+% \end{itemize}
 
-\begin{itemize}
-\item \texttt{smashgg\_bracket\_tv} is a Typescript project that generates a JavaScript snippet that can be copy and pasted into the Chrome Developer Console on a smash.gg tournament bracket to automatically reformat the Desktop bracket display for a large TV "jumbotron" display. Functions are also added to the console scope which organizers can use remotely by passing into Chrome command line arguments to enable remote connection of a Chrome instance from another Chrome instance on another laptop.
-\end{itemize}
+% \divider
 
-\divider
+% \cvevent{github.com/nelsonjchen/\{\texttt{qli-installer},\texttt{aqtinstall}\}}{Azure-DevOps/Qt Framework}{May 2019 -- December 2019}{Chandler, AZ}
 
-\cvevent{github.com/nelsonjchen/\{\texttt{qli-installer},\texttt{aqtinstall}\}}{Azure-DevOps/Qt Framework}{May 2019 -- December 2019}{Chandler, AZ}
-
-\begin{itemize}
-\item \texttt{qli-installer} is a Qt installer that installs Qt dependencies without the official Qt installer. This is a fork of the original qli-installer that adds parallel downloading.
-\item Superceded by \texttt{aqtinstaller} of which I contributed a CI system setup to to test building Qt applications on Windows, Mac, and Linux across a wide matrix.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{qli-installer} is a Qt installer that installs Qt dependencies without the official Qt installer. This is a fork of the original qli-installer that adds parallel downloading.
+% \item Superceded by \texttt{aqtinstaller} of which I contributed a CI system setup to to test building Qt applications on Windows, Mac, and Linux across a wide matrix.
+% \end{itemize}
 
 % \divider
 
@@ -283,58 +269,56 @@
 % \item Used as a real test bed for QT CLI installers setups.
 % \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/commaai/\texttt{PassShout}}{Kotlin on Android}{Feb 2019 -- Ongoing}{Chandler, AZ}
+% \cvevent{github.com/commaai/\texttt{PassShout}}{Kotlin on Android}{Feb 2019 -- Ongoing}{Chandler, AZ}
 
-\begin{itemize}
-\item \texttt{PassShout} is a bespoke accessibility service built for Android devices running Eventbrite's Organizer app. A subjective flaw with Eventbrite's Organizer app is that the type of ticket scanned is too small on the screen. When ticket QR codes are scanned, the service will read the type of the ticket scanned out loud to make it more clear what was scanned. Additionally, the app respects Android's audio focus and is able to be used with "music" or a loud looping announcement for attendees being played by controlling those on the device. This is useful for contiuously reminding guests to get out their tickets while the badge handler is moving down the line.
-\item Was to be run in 2020's convention but due to COVID-19 the convention was postponed and this app will have its day in 2021 or 2022, maybe.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{PassShout} is a bespoke accessibility service built for Android devices running Eventbrite's Organizer app. A subjective flaw with Eventbrite's Organizer app is that the type of ticket scanned is too small on the screen. When ticket QR codes are scanned, the service will read the type of the ticket scanned out loud to make it more clear what was scanned. Additionally, the app respects Android's audio focus and is able to be used with "music" or a loud looping announcement for attendees being played by controlling those on the device. This is useful for continuously reminding guests to get out their tickets while the badge handler is moving down the line.
+% \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{nc-qemu}}{C/Make/Azure Devops}{December 2018}{Chandler, AZ}
+% \cvevent{github.com/nelsonjchen/\texttt{nc-qemu}}{C/Make/Azure Devops}{December 2018}{Chandler, AZ}
 
-\begin{itemize}
-\item \texttt{nc-qemu} is a fork of the QEMU hardware virtualizer that builds on Azure DevOps on a Windows machine to legally include Hyper-V-based virtualization support for Windows users and to document executable steps on how to build QEMU on Windows. 
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{nc-qemu} is a fork of the QEMU hardware virtualizer that builds on Azure DevOps on a Windows machine to legally include Hyper-V-based virtualization support for Windows users and to document executable steps on how to build QEMU on Windows. 
+% \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{gooey-pyinstaller-demo}}{C/Make/Azure Devops}{August 2018}{Chandler, AZ}
+% \cvevent{github.com/nelsonjchen/\texttt{gooey-pyinstaller-demo}}{C/Make/Azure Devops}{August 2018}{Chandler, AZ}
 
-\begin{itemize}
-\item \texttt{gooey-pyinstaller-demo} is a tutorial I presented at the local Python meetup in Phoenix to show how to take a simple \texttt{Argparse} Python script all the way to a redistributable GUI application built under CI/CD in 5 minutes with Gooey, PyInstaller, and Azure Pipelines. 
-\end{itemize}
-
+% \begin{itemize}
+% \item \texttt{gooey-pyinstaller-demo} is a tutorial I presented at the local Python meetup in Phoenix to show how to take a simple \texttt{Argparse} Python script all the way to a redistributable GUI application built under CI/CD in 5 minutes with Gooey, PyInstaller, and Azure Pipelines. 
+% \end{itemize}
 
 
-\divider
+% \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{scoreboard-retro}}{Firebase/VueJS}{Jan 2018 -- Ongoing}{Hacienda Heights, CA}
+% \cvevent{github.com/nelsonjchen/\texttt{scoreboard-retro}}{Firebase/VueJS}{Jan 2018 -- Ongoing}{Hacienda Heights, CA}
 
-\begin{itemize}
-\item \texttt{scoreboard-retro} is a rough jumbotron scoreboard made for the various tournaments run during the Southern California Retro Videogame Conventions. The rough scoreboard was made overnight and contains an "administrator" interface that can be used by the monitor at the booth. The public display is heavily animated, customized, and updates nearly instantly thanks to VueJS and Firebase.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{scoreboard-retro} is a rough jumbotron scoreboard made for the various tournaments run during the Southern California Retro Videogame Conventions. The rough scoreboard was made overnight and contains an "administrator" interface that can be used by the monitor at the booth. The public display is heavily animated, customized, and updates nearly instantly thanks to VueJS and Firebase.
+% \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{nix-ptsname\_r-shim}}{Rust}{July 2017 -- Ongoing}{San Diego, CA}
+% \cvevent{github.com/nelsonjchen/\texttt{nix-ptsname\_r-shim}}{Rust}{July 2017 -- Ongoing}{San Diego, CA}
 
-\begin{itemize}
-\item \texttt{nix-ptsname\_r-shim} is a lightweight shim for use in the \texttt{nix} Rust crate/library to get the psuedo-terminal name on macOS like  the Linux-specific \texttt{ptsname\_r} without the use of the "unsafe" \texttt{ptsname} function. This is useful if you use an API that opens \texttt{/dev/ptmx} to create a psuedoterminal but does not return a file handle to the slave to run \texttt{ttyname} on.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{nix-ptsname\_r-shim} is a lightweight shim for use in the \texttt{nix} Rust crate/library to get the psuedo-terminal name on macOS like  the Linux-specific \texttt{ptsname\_r} without the use of the "unsafe" \texttt{ptsname} function. This is useful if you use an API that opens \texttt{/dev/ptmx} to create a psuedoterminal but does not return a file handle to the slave to run \texttt{ttyname} on.
+% \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/becauseofhope/\texttt{boh\_components}}{VueJS/Heroku/Typescript}{April 2017 -- Ongoing}{San Diego, CA}
+% \cvevent{github.com/becauseofhope/\texttt{boh\_components}}{VueJS/Heroku/Typescript}{April 2017 -- Ongoing}{San Diego, CA}
 
-\begin{itemize}
-\item \texttt{boh\_components} is used for the 2nd generation website for Because of Hope, a 501(c)(3) organization.
-\item The widgets are meant to be included in an existing design.
-\item A small Heroku site and deployment is setup so that component changes can be previewed before deploying to production which is used from Shopify.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{boh\_components} is used for the 2nd generation website for Because of Hope, a 501(c)(3) organization.
+% \item The widgets are meant to be included in an existing design.
+% \item A small Heroku site and deployment is setup so that component changes can be previewed before deploying to production which is used from Shopify.
+% \end{itemize}
 
 % \divider
 
@@ -344,16 +328,16 @@
 % \item \texttt{omf-theme-nelsonjchen} is a port/adaptation of @re5et's oh-my-zsh theme for me to the oh-my-fish framework.
 % \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/smbc-rss-plus/\texttt{smbc-rss-plus}}{Python}{July 2015 -- Ongoing}{San Diego, CA / Chandler, AZ}
+% \cvevent{github.com/smbc-rss-plus/\texttt{smbc-rss-plus}}{Python}{July 2015 -- Ongoing}{San Diego, CA / Chandler, AZ}
 
-\begin{itemize}
-\item \texttt{smbc-rss-plus} takes the popular "Saturday Morning Breakfast Comic" RSS feed, scrapes every item in the feed, visits the link, extracts the "Red Button" image bonus image, and appends it to every item in the RSS feed.
-\item This was originally a conversion of a Yahoo Pipes pipeline (RIP). Later iterations required page scraping as the URL to bonus image was no longer constant and page scraping became required.
-\item Runs on Heroku under its cron service uploading to S3.
-\item This service continues to run and an informational page can be found at smbc-rss-plus.mindflakes.com
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{smbc-rss-plus} takes the popular "Saturday Morning Breakfast Comic" RSS feed, scrapes every item in the feed, visits the link, extracts the "Red Button" image bonus image, and appends it to every item in the RSS feed.
+% \item This was originally a conversion of a Yahoo Pipes pipeline (RIP). Later iterations required page scraping as the URL to bonus image was no longer constant and page scraping became required.
+% \item Runs on Heroku under its cron service uploading to S3.
+% \item This service continues to run and an informational page can be found at smbc-rss-plus.mindflakes.com
+% \end{itemize}
 
 % \divider
 
@@ -367,17 +351,17 @@
 % \item Heroku was used for review of the site before deploying to production.
 % \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{github.com/nelsonjchen/\texttt{cowboystyle}}{Python}{May 2012 -- December 2012}{Santa Barbara, CA}
+% \cvevent{github.com/nelsonjchen/\texttt{cowboystyle}}{Python}{May 2012 -- December 2012}{Santa Barbara, CA}
 
-\begin{itemize}
-\item \texttt{cowboystyle} is the source code for the /r/UCSantaBarbara subreddit CSS that is viewable on the now-old reddit at https://old.reddit.com/r/UCSantaBarbara .
-\item Design is extremely unique amongst all college subreddits at the time and possibly still now. Used Selenium to take screenshots of all other college subreddits for viewing in a gallery. Near-total conversion with prominent sidebar element "breaking" the box while keeping well within the security constraints of Reddit CSS's validator.
-\item A standard, night, and dark mode was generated into one CSS for compatibility with a popular Reddit extension that offered a night mode.
-\item Night mode was also generated for the purposes of switching the CSS to night mode regardless of browser settings when the campus was under nightfall via a bot.
-\item Included a watch script that automatically recompiles the CSS and deploys CSS to a test-subreddit for testing.
-\end{itemize}
+% \begin{itemize}
+% \item \texttt{cowboystyle} is the source code for the /r/UCSantaBarbara subreddit CSS that is viewable on the now-old reddit at https://old.reddit.com/r/UCSantaBarbara .
+% \item Design is extremely unique amongst all college subreddits at the time and possibly still now. Used Selenium to take screenshots of all other college subreddits for viewing in a gallery. Near-total conversion with prominent sidebar element "breaking" the box while keeping well within the security constraints of Reddit CSS's validator.
+% \item A standard, night, and dark mode was generated into one CSS for compatibility with a popular Reddit extension that offered a night mode.
+% \item Night mode was also generated for the purposes of switching the CSS to night mode regardless of browser settings when the campus was under nightfall via a bot.
+% \item Included a watch script that automatically recompiles the CSS and deploys CSS to a test-subreddit for testing.
+% \end{itemize}
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
@@ -397,9 +381,9 @@
 
 \cvtag{Git} \cvtag{Python} \cvtag{Linux} \cvtag{GitHub}
 
-\cvtag{Windows} \cvtag{Embedded Systems} 
+\cvtag{Windows} \cvtag{Embedded Systems} \cvtag{Go}
 
-\cvtag{Reverse Engineering} \cvtag{CI/CD} \cvtag{Tooling}
+\cvtag{CI/CD} \cvtag{AWS} \cvtag{Tooling} \cvtag{Ruby}
 
 
 %% Yeah I didn't spend too much time making all the
@@ -422,18 +406,18 @@
 
 \cvref{David Lee}{Microsoft}{davieweb@hotmail.com}{626-503-5242}
 
-\divider
+% \divider
 
-\cvref{Heng Meng}{Boingo}{hengmeng2009@gmail.com}{626-537-5043}
+% \cvref{Heng Meng}{Boingo}{hengmeng2009@gmail.com}{626-537-5043}
 
 \divider
 
 More references available upon request.
 
 
-\cvsection{Patents}
+% \cvsection{Patents}
 
-\texttt{US10949868B1} - Method and system for single use of electronic retailer coupons and referral program. Note: I am incorrectly omitted as an inventor. I definitively contributed the secure and cheap on-site TOTP MFA token verification claim. Reference from Alex Shah (the only listed Inventor) and/or Mobivity can be provided on request.
+% \texttt{US10949868B1} - Method and system for single use of electronic retailer coupons and referral program. Contributed the secure and cheap on-site TOTP MFA token verification claim. Reference from Alex Shah can be provided on request
 
 
 \end{paracol}
